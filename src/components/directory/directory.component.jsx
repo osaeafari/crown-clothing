@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuItem from '../menu-item/menu-item.component';
-import './directory.styles.scss'
+import './directory.styles.scss';
 
 
 class Directory extends React.Component {
@@ -42,7 +42,7 @@ class Directory extends React.Component {
           linkUrl: 'shop/mens'
         }
       ] 
-    }
+    };
   }
 
   render() {
