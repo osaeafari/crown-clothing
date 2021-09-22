@@ -71,7 +71,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(
-  null, 
+  mapStateToProps, 
   mapDispatchToProps
 )(App);
 
