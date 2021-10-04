@@ -6,7 +6,8 @@ import { selectCollection } from '../../redux/shop/shop.selectors';
 import { 
   CollectionItemsContainer, 
   CollectionPageContainer, 
-  CollectionTitle } from './collection.styles';
+  CollectionTitle 
+} from './collection.styles';
 
 //import './collection.styles.scss';
 
