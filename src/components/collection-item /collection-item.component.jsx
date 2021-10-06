@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { connect } from 'react-redux';
 
 import { addItem } from '../../redux/cart/cart.actions';
@@ -13,14 +12,14 @@ import {
   PriceContainer
 } from './collection-item.styles';
 
-//import './collection-item.styles.scss';
 
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
+  
   return (
     <CollectionItemContainer>
       <BackgroundImage className='image' imageUrl={imageUrl} />
-      <CollectionFooterContainer className='collection-footer'>
+      <CollectionFooterContainer>
         <NameContainer>{ name }</NameContainer>
         <PriceContainer>{ price }</PriceContainer>
       </CollectionFooterContainer>

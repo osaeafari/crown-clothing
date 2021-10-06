@@ -9,14 +9,13 @@ import {
   PreviewContainer
 } from './collection-preview.styles';
 
-//import './collection-preview.styles.scss';
 
 const CollectionPreview = ({ title, items, history, match, routeName }) => (
   <CollectionPreviewContainer>
-  <TitleContainer onClick={() => history.push(`${match.path}/${routeName}`)}>
-    {title.toUpperCase()}
-  </TitleContainer> 
-  <PreviewContainer>
+    <TitleContainer onClick={() => history.push(`${match.path}/${routeName}`)}>
+      {title.toUpperCase()}
+    </TitleContainer> 
+    <PreviewContainer>
       {items
         .filter((item, idx) => idx < 4)
         .map(item => (
